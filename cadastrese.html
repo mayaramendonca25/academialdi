@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Academia KJM - Cadastre-se</title>
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+   </head>
+   <body>
+      <!--------------------------------------------pagina da tabela aluno---------------------------------------------->
+      <div class="conteiner">
+         <header >
+            <div class="logo">
+               <img src="imagens/logo.png">
+            </div>
+         </header>
+         <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aulas.html">Aulas</a></li>
+            <li><a href="personal.html">Personal</a></li>
+         </ul>
+         <nav>
+            <ul>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="#">Cadastre-se</a></li>
+            </ul>
+         </nav>
+         <main>
+            <div class="formularios">
+               <form action="mainAluno.php" method="post">
+                  <h1>Cadastre-se</h1>
+                  <p>Digite o nome:</p>
+                  <input type="text" name="nome" size="20" />
+                  <br/> <br/> 
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20" />
+                  <br/> <br/> 
+                  <p>Digite o endereço:</p>
+                  <input type="text" name="endereco" size="30" />
+                  <br/> <br/> 
+                  <p>Digite o telefone:</p>
+                  <input type="text" name="telefone" size="20" />
+                  <br/> <br/> 
+                  <p>Digite a data de nascimento:</p>
+                  <input type="text" name="data_nascimento" size="20" />
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name=acao value="Cadastre" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAluno.php" method="post">
+                  <h1>Consultar alunos:</h1>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name=acaoconsultar value="Consultar Alunos" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAluno.php" method="post">
+                  <h1>Consultar aluno pelo CPF:</h1>
+                  <br/> <br/> 
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="consultarChave" value="Consultar CPF Aluno" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAluno.php" method="post">
+                  <h1>Alterar os dados do aluno:</h1>
+                  <br/> <br/>
+                  <p>Digite o nome:</p>
+                  <input type="text" name="nome" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o endereço:</p>
+                  <input type="text" name="endereco" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o telefone:</p>
+                  <input type="text" name="telefone" size="20"/>
+                  <br/> <br/>
+                  <p>Digite a data de nascimento:</p>
+                  <input type="text" name="data_nascimento" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/> 
+                  <input type="submit" name="acaoalterar" value="Alterar Aluno"/>
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAluno.php" method="post">
+                  <h1>Consultar aluno pelo nome:</h1>
+                  <br/> <br/> 
+                  <p>Digite o nome:</p>
+                  <input type="text" name="nome" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="consultar" value="Consultar pelo nome" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAluno.php" method="post">
+                  <h1>Excluir aluno:</h1>
+                  <br/> <br/> 
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="excluir" value="Excluir aluno" />
+               </form>
+            </div>
+         </main>
+         <article>
+         </article>
+         <footer>
+            <p>
+               Entre em contado:<br>
+               4002-8922 / 95845-4512<br>
+               Rua da flores, 1510 - Bonsucesso, Guarulhos
+            </p>
+         </footer>
+      </div>
+   </body>
+</html>

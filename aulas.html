@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Academia KJM - Aulas</title>
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+   </head>
+   <body>
+      <!--------------------------------------------pagina da tabela aula---------------------------------------------->
+      <div class="conteiner">
+         <header >
+            <div class="logo">
+               <img src="imagens/logo.png">
+            </div>
+         </header>
+         <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Aulas</a></li>
+            <li><a href="personal.html">Personal</a></li>
+         </ul>
+         <nav>
+            <ul>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="cadastrese.html">Cadastre-se</a></li>
+            </ul>
+         </nav>
+         <main>
+            <div class="formularios">
+               <form action="mainAula.php" method="post">
+                  <h1>Aulas</h1>
+                  <p>Digite o código da aula:</p>
+                  <input type="text" name="cod_aula" size="20" />
+                  <p>Digite a aula:</p>
+                  <input type="text" name="aula" size="20" />
+                  <p>Digite o dia:</p>
+                  <input type="text" name="dia_aula" size="20" />
+                  <p>Digite o horário:</p>
+                  <input type="text" name="horario" size="20" />
+                  <p>Digite o preço:</p>
+                  <input type="text" name="preco" size="20" />
+                  <br/> <br/> 
+                  <br/> <br/> 
+                  <input type="submit" name=acao value="Registrar" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAula.php" method="post">
+                  <h1>Consultar Aulas:</h1>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name=acaoconsultar value="Consultar Aulas" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAula.php" method="post">
+                  <h1>Consultar código da aula:</h1>
+                  <br/> <br/> 
+                  <p>Digite o código:</p>
+                  <input type="text" name="cod_aula" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="consultarChave" value="Consultar codigo" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainAula.php" method="post">
+                  <h1>Alterar os dados da aula:</h1>
+                  <br/> <br/>
+                  <p>Digite o código da aula:</p>
+                  <input type="text" name="cod_aula" size="20"/>
+                  <br/> <br/>
+                  <p>Digite a aula:</p>
+                  <input type="text" name="aula" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o dia:</p>
+                  <input type="text" name="dia_aula" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o horario:</p>
+                  <input type="text" name="horario" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o preço:</p>
+                  <input type="text" name="preco" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/> 
+                  <input type="submit" name="acaoalterar1" value="Alterar Aula"/>
+               </form>
+            </div>
+            <br/> <br/> 
+            <div class="formularios">
+               <form action="mainAula.php" method="post">
+                  <h1>Consultar aula pelo dia:</h1>
+                  <br/> <br/> 
+                  <p>Digite o dia:</p>
+                  <input type="text" name="dia_aula" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="consultar" value="Consultar dia" />
+               </form>
+            </div>
+            <br/> <br/> 
+            <div class="formularios">
+               <form action="mainAula.php" method="post">
+                  <h1>Excluir aula:</h1>
+                  <br/> <br/> 
+                  <p>Digite o código da aula:</p>
+                  <input type="text" name="cod_aula" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="excluir" value="Excluir aula" />
+               </form>
+            </div>
+         </main>
+         <article>
+         </article>
+         <footer>
+            <p>
+               Entre em contado:<br>
+               4002-8922 / 95845-4512<br>
+               Rua da flores, 1510 - Bonsucesso, Guarulhos<br><br>
+            </p>
+         </footer>
+      </div>
+   </body>
+</html>

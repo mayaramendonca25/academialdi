@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Academia KJM - Personal</title>
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+   </head>
+   <body>
+      <!--------------------------------------------pagina da tabela personal---------------------------------------------->
+      <div class="conteiner">
+         <header >
+            <div class="logo">
+               <img src="imagens/logo.png">
+            </div>
+         </header>
+         <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aulas.html">Aulas</a></li>
+            <li><a href="#">Personal</a></li>
+         </ul>
+         <nav>
+            <ul>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="cadastrese.html">Cadastre-se</a></li>
+            </ul>
+         </nav>
+         <main>
+            <div class="formularios">
+               <form action="mainPersonal.php" method="post">
+                  <h1>Personal</h1>
+                  <p>Digite o nome:</p>
+                  <input type="text" name="nome" size="30" />
+                  <br/> <br/> 
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20" />
+                  <br/> <br/> 
+                  <p>Digite o telefone:</p>
+                  <input type="text" name="telefone" size="20" />
+                  <br/> <br/> 
+                  <p>Digite o endereço:</p>
+                  <input type="text" name="endereco" size="30" />
+                  <br/> <br/> 
+                  <p>Digite a data de nascimento:</p>
+                  <input type="text" name="data_nascimento" size="20" />
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name=acao2 value="Registre" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainPersonal.php" method="post">
+                  <h1>Consultar Personal:</h1>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name=acaoconsultar value="Consultar Personal" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainPersonal.php" method="post">
+                  <h1>Consultar pelo CPF do personal:</h1>
+                  <br/> <br/> 
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="consultarChave1" value="Consultar pelo CPF" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainPersonal.php" method="post">
+                  <h1>Alterar os dados do personal:</h1>
+                  <br/> <br/>
+                  <p>Digite o nome:</p>
+                  <input type="text" name="nome" size="30"/>
+                  <br/> <br/>
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o endereço:</p>
+                  <input type="text" name="endereco" size="20"/>
+                  <br/> <br/>
+                  <p>Digite o telefone:</p>
+                  <input type="text" name="telefone" size="20"/>
+                  <br/> <br/>
+                  <p>Digite a data de nascimento:</p>
+                  <input type="text" name="data_nascimento" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/> 
+                  <input type="submit" name="acaoalterar" value="Alterar Personal"/>
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainPersonal.php" method="post">
+                  <h1>Consultar personal pelo telefone:</h1>
+                  <br/> <br/> 
+                  <p>Digite o telefone:</p>
+                  <input type="text" name="telefone" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="consultar" value="Consultar pelo telefone" />
+               </form>
+            </div>
+            <br/>
+            <div class="formularios">
+               <form action="mainPersonal.php" method="post">
+                  <h1>Excluir personal:</h1>
+                  <br/> <br/> 
+                  <p>Digite o CPF:</p>
+                  <input type="text" name="cpf" size="20"/>
+                  <br/> <br/>
+                  <br/> <br/>  
+                  <input type="submit" name="excluir" value="Excluir personal" />
+               </form>
+            </div>
+         </main>
+         <article>
+         </article>
+         <footer>
+            <p>
+               Entre em contado:<br>
+               4002-8922 / 95845-4512<br>
+               Rua da flores, 1510 - Bonsucesso, Guarulhos
+            </p>
+         </footer>
+      </div>
+   </body>
+</html>
